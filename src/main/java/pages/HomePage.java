@@ -13,7 +13,7 @@ public class HomePage {
     }
 
     private void ClickLink(String linkText) {
-        driver.findElement(By.linkText(linkText));
+        driver.findElement(By.linkText(linkText)).click();
     }
 
     public LoginPage ClickBasicAuthLink() {
@@ -22,7 +22,7 @@ public class HomePage {
     }
 
     public DropdownPage clickDropDownLink(){
-        ClickLink("");
+        ClickLink("Dropdown");
         return new DropdownPage(driver);
     }
 
