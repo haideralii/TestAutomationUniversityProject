@@ -2,20 +2,29 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class HomePage {
     private WebDriver driver;
 
-    private By _formAuthentication = By.linkText("Form Authentication");
+    // private By _formAuthentication = By.linkText("Form Authentication");
 
-    public HomePage(WebDriver driver){
+    public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public LoginPage ClickBasicAuthLink(){
-        driver.findElement(_formAuthentication).click();
+    private void ClickLink(String linkText) {
+        driver.findElement(By.linkText(linkText)).click();
+    }
+
+    public LoginPage ClickBasicAuthLink() {
+        ClickLink("Form Authentication");
         return new LoginPage(driver);
     }
 
+    public DropdownPage clickDropDownLink(){
+        ClickLink("Dropdown");
+        return new DropdownPage(driver);
+    }
+
 }
+
