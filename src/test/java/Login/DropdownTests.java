@@ -17,7 +17,8 @@ public class DropdownTests extends BaseTest {
         dropdown.selectFromDropDown(option);
         var selectedOption = dropdown.getAllSelectedOptions();
         assertEquals(selectedOption.size(), 1, "option is not 1");
-        assertTrue(selectedOption.contains(option),  "option is not corect");
+        assertTrue(selectedOption.contains(option),  "option is not correct");
+
     }
 
 }
