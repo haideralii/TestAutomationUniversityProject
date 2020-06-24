@@ -1,4 +1,4 @@
-package Login;
+package Dropdown;
 
 import Base.BaseTest;
 import org.openqa.selenium.support.ui.Select;
