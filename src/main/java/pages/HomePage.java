@@ -31,5 +31,20 @@ public class HomePage {
         return new HoversPage(driver);
     }
 
+    public KeyPressPage clickKeyPressLink(){
+        ClickLink("Key Presses");
+        return new KeyPressPage(driver);
+    }
+
+    public HorizontalSliderPage clickHorizontalSliderLink(){
+        ClickLink("Horizontal Slider");
+        return new HorizontalSliderPage(driver);
+    }
+
+    public JSAlertsPage clickJSAlertsLink(){
+        ClickLink("JavaScript Alerts");
+        return new JSAlertsPage(driver);
+    }
+
 }
 
