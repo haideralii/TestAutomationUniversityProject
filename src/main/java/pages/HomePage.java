@@ -46,5 +46,10 @@ public class HomePage {
         return new JSAlertsPage(driver);
     }
 
+    public FileUploadPage clickFileUploadLink(){
+        ClickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
+
 }
 
