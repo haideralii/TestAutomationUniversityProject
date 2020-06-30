@@ -26,5 +26,35 @@ public class HomePage {
         return new DropdownPage(driver);
     }
 
+    public HoversPage clickHoverLink(){
+        ClickLink("Hovers");
+        return new HoversPage(driver);
+    }
+
+    public KeyPressPage clickKeyPressLink(){
+        ClickLink("Key Presses");
+        return new KeyPressPage(driver);
+    }
+
+    public HorizontalSliderPage clickHorizontalSliderLink(){
+        ClickLink("Horizontal Slider");
+        return new HorizontalSliderPage(driver);
+    }
+
+    public JSAlertsPage clickJSAlertsLink(){
+        ClickLink("JavaScript Alerts");
+        return new JSAlertsPage(driver);
+    }
+
+    public FileUploadPage clickFileUploadLink(){
+        ClickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
+
+    public ContextMenuPage clickContextMenuLink(){
+        ClickLink("Context Menu");
+        return new ContextMenuPage(driver);
+    }
+
 }
 
