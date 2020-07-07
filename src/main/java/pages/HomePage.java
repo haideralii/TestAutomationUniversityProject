@@ -61,5 +61,14 @@ public class HomePage {
         return new WYSIWYGEditorPage(driver);
     }
 
+    public FramesPage clickOnFramesLink(){
+        ClickLink("Frames");
+        return new FramesPage(driver);
+    }
+
+    public ForgotPasswordPage clickForgotPasswordLink() {
+        ClickLink("Forgot Password");
+        return new ForgotPasswordPage(driver);
+    }
 }
 
