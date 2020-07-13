@@ -70,5 +70,10 @@ public class HomePage {
         ClickLink("Forgot Password");
         return new ForgotPasswordPage(driver);
     }
+
+    public DynamicLoadingPage clickDynamicLoadingLink(){
+        ClickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
+    }
 }
 
