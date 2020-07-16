@@ -75,5 +75,16 @@ public class HomePage {
         ClickLink("Dynamic Loading");
         return new DynamicLoadingPage(driver);
     }
+
+    public LargeDeepDOMPage clickOnLargeDeepDOMink(){
+        ClickLink("Large & Deep DOM");
+        return new LargeDeepDOMPage(driver);
+    }
+
+    public InfiniteScrollPage clickInfiniteScrollLink(){
+        ClickLink("Infinite Scroll");
+        return new InfiniteScrollPage(driver);
+    }
+
 }
 

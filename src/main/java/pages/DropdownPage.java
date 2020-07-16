@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -30,5 +31,14 @@ public class DropdownPage {
     public void selectFromDropDown(String options){
         findDropdownElements().selectByVisibleText(options);
     }
+
+    // Update DropDown attribute Using JavaScript
+    public void UpdateDropdownAttributes(){
+        WebElement element = driver.findElement(dropdown);
+
+        String _script = "arguments[0].setAttribute('multiple', '')";
+        ((JavascriptExecutor)driver).executeScript(_script, element);
+    }
+
 
 }
