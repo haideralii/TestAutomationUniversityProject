@@ -12,14 +12,14 @@ public class KeyPresstests extends BaseTest {
 
     @Test
     public void PressBackSpaceTests(){
-        var _keyPress = homePage.clickKeyPressLink();
+        KeyPressPage _keyPress = homePage.clickKeyPressLink();
         _keyPress.EnterText("A" + Keys.BACK_SPACE);
         assertEquals("You entered: BACK_SPACE", _keyPress.getResult());
     }
 
     @Test
     public void EnterPiTest(){
-        var _keyPress = homePage.clickKeyPressLink();
+        KeyPressPage _keyPress = homePage.clickKeyPressLink();
         _keyPress.EnterPi();
         assertEquals("You entered: 4", _keyPress.getResult());
     }

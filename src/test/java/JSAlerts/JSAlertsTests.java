@@ -3,12 +3,13 @@ package JSAlerts;
 import Base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.JSAlertsPage;
 
 public class JSAlertsTests extends BaseTest {
 
     @Test
     public void Accept_JSAlertTest(){
-        var _jsAlertsPage = homePage.clickJSAlertsLink();
+        JSAlertsPage _jsAlertsPage = homePage.clickJSAlertsLink();
         _jsAlertsPage.ClickOn_JSAlertButton();
         Assert.assertEquals(_jsAlertsPage.GetTextOf_JSAlert(), "I am a JS Alert", "Not JS Alert");
         _jsAlertsPage.Accept_JSAlert();
@@ -17,7 +18,7 @@ public class JSAlertsTests extends BaseTest {
 
     @Test
     public void Dismiss_ConfirmJSAlertTest(){
-        var _jsAlertsPage = homePage.clickJSAlertsLink();
+        JSAlertsPage _jsAlertsPage = homePage.clickJSAlertsLink();
         _jsAlertsPage.ClickOn_JSConfirmButton();
         Assert.assertEquals(_jsAlertsPage.GetTextOf_JSConfirmAlert(),"I am a JS Confirm","Not Confirm JS");
         _jsAlertsPage.Dismiss_ConfirmJSAlert();
@@ -27,7 +28,7 @@ public class JSAlertsTests extends BaseTest {
     @Test
     public void EnterTextIn_PromptJS(){
         String text = "JS Prompt";
-        var _jsAlertPage = homePage.clickJSAlertsLink();
+        JSAlertsPage _jsAlertPage = homePage.clickJSAlertsLink();
         _jsAlertPage.ClickOn_JSPrompt();
         _jsAlertPage.EnterTextIn_JSPrompt(text);
         _jsAlertPage.Accept_JSPrompt();

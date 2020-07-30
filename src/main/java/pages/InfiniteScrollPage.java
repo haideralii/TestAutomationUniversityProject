@@ -11,10 +11,10 @@ public class InfiniteScrollPage {
     private By _jScroll = By.className("jscroll-added");
 
     public void ScrollToProvidedPassage(int index){
-        String _script = "window.scrollTo(0, document.body.scrollHeight)";
-        var _scroll = ((JavascriptExecutor)driver);
+        String script = "window.scrollTo(0, document.body.scrollHeight)";
+        JavascriptExecutor jsExecutor = (JavascriptExecutor)driver;
         while (FindSizeOfParagraph() < index){
-            _scroll.executeScript(_script);
+            jsExecutor.executeScript(script);
         }
     }
 

@@ -3,12 +3,13 @@ package Frames;
 import Base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.WYSIWYGEditorPage;
 
 public class FramesTests extends BaseTest {
 
     @Test
     public void EnterTextInEditorTest(){
-        var _wysiwygeditorPage = homePage.clickWYSIWYGEditorLink();
+        WYSIWYGEditorPage _wysiwygeditorPage = homePage.clickWYSIWYGEditorLink();
 
         String text1 = "Hello ";
         String text2 = "World";

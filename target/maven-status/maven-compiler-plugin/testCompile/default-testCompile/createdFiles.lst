@@ -1,0 +1,17 @@
+Dropdown\DropdownTests.class
+JSAlerts\ContextMenuTests.class
+ForgotPassword\ForgotpasswordTests.class
+Base\BaseTest.class
+HorizontalSliderTests\HorizontalSliderTests.class
+KeyPresses\KeyPresstests.class
+DynamicLoading\DynamicLoadingExample2Tests.class
+JavaScriptsTests\JavaScriptScrollTests.class
+DynamicLoading\DynamicLoadingExample1Tests.class
+JavaScriptsTests\InfinitScrollTests.class
+JSAlerts\FileUploadTests.class
+Hovers\HoversTests.class
+JSAlerts\JSAlertsTests.class
+Frames\NestedFramesTests.class
+Login\LoginTests.class
+JavaScriptsTests\DropdownUpdateAttributes.class
+Frames\FramesTests.class
