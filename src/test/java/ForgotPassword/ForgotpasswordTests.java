@@ -16,7 +16,7 @@ public class ForgotpasswordTests extends BaseTest {
         _forgotPassword.clickOnEmailField();
         _forgotPassword.enterEmailInForgotPasswordField("123@email.com");
        ForgotPasswordEmailSentPage emailSentPage =  _forgotPassword.clickOnRetrieveEmailButton();
-        assertTrue(emailSentPage.verifySuccessMessage().contains("Your e-mail's been sent!"), "Invalid");
+        assertTrue(emailSentPage.verifySuccessMessage().contains("Your e-mail's been sent!"), "Invalid result");
     }
 
 }
